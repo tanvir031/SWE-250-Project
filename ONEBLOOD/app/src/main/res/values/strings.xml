@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ONEBLOOD</string>
+    <string name="loginstring">LOGIN</string>
+
+
+    <string-array name="Country_Names">
+        <item>Tanvir</item>
+        <item>Sajid</item>
+        <item>Reza</item>
+        <item>Sakib</item>
+        <item>jawad</item>
+    </string-array>
+
+    <string-array name="blood">
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB-</item>
+        <item>B-</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="mobile">
+        <item>01710973067</item>
+        <item>01710972346</item>
+        <item>01710963267</item>
+        <item>01710973267</item>
+        <item>01710973027</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:weightSum="10"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            >
+
+
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/bloodID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B+"
+                android:textSize="65dp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:shadowColor="#161515"
+                android:shadowRadius="10"
+                android:shadowDy="1"
+                android:shadowDx="1"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            >
+
+
+        <TextView
+            android:id="@+id/countryNameID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="account Name"
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:shadowColor="#ff22"
+            android:textSize="35dp"
+            />
+
+        <TextView
+            android:id="@+id/mobileID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="hello"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#312828"
+            android:textStyle="normal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
