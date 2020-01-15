@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile2"
+        android:title="Profile"
+        />
+    <item
+        android:id="@+id/contact_us2"
+        android:title="Contact Us"
+        />
+    <item
+        android:id="@+id/about_us2"
+        android:title="About Us"
+        />
+    <item
+        android:id="@+id/logoutnow2"
+        android:title="logout"
+        />
+
+</menu>

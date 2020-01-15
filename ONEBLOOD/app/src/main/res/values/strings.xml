@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">ONEBLOOD</string>
     <string name="loginstring">LOGIN</string>
-
+    <string name="draweropen">drawerOpen</string>
+    <string name="drawerclose">drawerClose</string>
 
     <string-array name="Country_Names">
         <item>Tanvir</item>
