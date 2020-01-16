@@ -133,6 +133,7 @@
                 android:shadowDy="1"
                 android:shadowRadius="15"
                 android:text="REGISTER"
+                android:onClick="userReg"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
