@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    EditText ET_NAME,ET_PASS;
+    String login_name,login_pass;
     private EditText userName,Password;
     private TextView login;
     private RelativeLayout loginButton,registerButton;
@@ -20,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ET_NAME = (EditText)findViewById(R.id.userID);
+        ET_PASS = (EditText)findViewById(R.id.passID);
 
         loginButton = (RelativeLayout) findViewById(R.id.cd1);
         registerButton = (RelativeLayout) findViewById(R.id.cd2);
@@ -33,16 +37,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if(v.getId()==R.id.cd1 && userName.getText().toString().equals("admin") && Password.getText().toString().equals("admin")){
-                Toast toast = Toast.makeText(MainActivity.this,"Login Attempt Succesful",Toast.LENGTH_SHORT);
-                toast.show();
+        if(v.getId()==R.id.cd1 ){
+                /*Toast toast = Toast.makeText(MainActivity.this,"Login Attempt Succesful",Toast.LENGTH_SHORT);
+                toast.show();*/
 
-                openActivity2();
+
         }
 
         else if(v.getId()==R.id.cd1){
-            Toast toast2 = Toast.makeText(MainActivity.this,"Login Attemp Failed",Toast.LENGTH_SHORT);
-            toast2.show();
+            /*Toast toast2 = Toast.makeText(MainActivity.this,"Login Attemp Failed",Toast.LENGTH_SHORT);
+            toast2.show();*/
         }
 
         else if(v.getId()==R.id.cd2){
@@ -63,7 +67,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void userReg(View view){
         startActivity(new Intent(this,Register.class));
     }
-    public void userLogin(){
+    public void userLogin(View view){
+
+        login_name = ET_NAME.getText().toString();
+        login_pass = ET_PASS.getText().toString();
+        String method = "login";
+        Database backgroundTask = new Database(this);
+        backgroundTask.execute(method,login_name,login_pass);
 
     }
 

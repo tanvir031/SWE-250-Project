@@ -97,7 +97,8 @@
                 android:text="@string/loginstring"
                 android:textColor="#fff"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="userLogin"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
