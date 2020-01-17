@@ -59,6 +59,20 @@
         android:inputType="textPassword"
         android:textSize="16dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="json appear here"
+        android:id="@+id/textview"
+        />
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:text="getjson"
+        android:onClick="getJSON"
+        />
+
     <androidx.cardview.widget.CardView
         android:layout_width="200dp"
         android:layout_height="50dp"

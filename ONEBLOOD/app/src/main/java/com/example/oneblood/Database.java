@@ -1,7 +1,9 @@
 package com.example.oneblood;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
@@ -17,8 +19,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
+
 public class Database extends AsyncTask<String,Void,String> {
     AlertDialog alertDialog;
+
 
     Context ctx;
     Database(Context ctx){
@@ -106,14 +112,26 @@ public class Database extends AsyncTask<String,Void,String> {
                String response = "";
                String line = "";
 
-               while((line = bufferedReader.readLine())!=null)
+               if((line = bufferedReader.readLine())!=null)
                {
                    response+= line;
 
                }
+
                bufferedReader.close();
                inputStream.close();
                httpURLConnection.disconnect();
+
+               if(response.equals("OK")){
+                    Intent intent=new Intent(ctx,Activity2.class);
+                   ctx.startActivity(intent);
+                   ((Activity)ctx).finish();
+               }
+               else{
+                   System.out.println("Hello foga");
+               }
+
+
                return response;
 
            } catch (MalformedURLException e) {
@@ -133,6 +151,8 @@ public class Database extends AsyncTask<String,Void,String> {
         super.onProgressUpdate(values);
     }
 
+
+
     @Override
     protected void onPostExecute(String result) {
         if(result.equals("Registration Suceess..."))
@@ -148,4 +168,6 @@ public class Database extends AsyncTask<String,Void,String> {
 
         }
     }
+
+
 }
