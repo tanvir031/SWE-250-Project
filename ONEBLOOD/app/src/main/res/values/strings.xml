@@ -4,6 +4,9 @@
     <string name="draweropen">drawerOpen</string>
     <string name="drawerclose">drawerClose</string>
 
+    <string name="tanvir">Github:"Github.com/dr-thrax"</string>
+    <string name="durjoy">Github:"Github.com/durjoy001"</string>
+
     <string-array name="Country_Names">
         <item>Tanvir</item>
         <item>Sajid</item>

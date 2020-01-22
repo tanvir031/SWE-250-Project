@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app"
+    tools:context=".About">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed By"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:shadowColor="@color/c3"
+        android:shadowRadius="1"
+        android:fontFamily="@font/bangers"
+        android:textSize="35sp"
+        />
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/tanvir"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:fadingEdge="horizontal"
+        android:outlineSpotShadowColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Moinul Islam Tanvir"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#111111"
+        />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:textIsSelectable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/tanvir"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/durjoy1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:fadingEdge="horizontal"
+        android:outlineSpotShadowColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Durjoy Dey"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#111111"
+        />
+
+    <TextView
+
+        android:textIsSelectable="true"
+        android:id="@+id/textview4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/durjoy"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

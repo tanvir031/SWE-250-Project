@@ -40,8 +40,8 @@ public class Database extends AsyncTask<String,Void,String> {
 
     @Override
     protected String  doInBackground(String... params) {
-        String reg_url = "http://192.168.0.107/OneBlood/register.php";
-        String login_url = "http://192.168.0.107/OneBlood/login.php";
+        String reg_url = "https://oneblood1.000webhostapp.com/oneblood/register.php";
+        String login_url = "https://oneblood1.000webhostapp.com/oneblood/login.php";
 
         String method  = params[0];
         if(method.equals("register"))
@@ -124,8 +124,10 @@ public class Database extends AsyncTask<String,Void,String> {
 
                if(response.equals("OK")){
                     Intent intent=new Intent(ctx,Activity2.class);
+                    intent.putExtra("login_name",login_name);
+
                    ctx.startActivity(intent);
-                   ((Activity)ctx).finish();
+                   //((Activity)ctx).finish()
                }
                else{
                    System.out.println("Hello foga");
@@ -157,11 +159,9 @@ public class Database extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
         if(result.equals("Registration Suceess..."))
         {
-            Toast.makeText(ctx,result,Toast.LENGTH_SHORT).show();
-
-
+            Toast.makeText(ctx,"Registration Successfull",Toast.LENGTH_SHORT).show();
         }
-       else
+       else if(!result.equals("OK"))
         {
             alertDialog.setMessage(result);
             alertDialog.show();

@@ -16,7 +16,8 @@
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
             android:id="@+id/toolbar2"
             />
 
@@ -40,13 +41,13 @@
     </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:layout_width="match_parent"
+        android:layout_width="230dp"
         android:layout_height="match_parent"
         android:id="@+id/navigationview2"
         app:headerLayout="@layout/header2"
         app:menu="@menu/menu_item2"
         android:layout_gravity="start"
-        android:background="@color/c3"
+        android:background="@color/colorAccent"
         app:itemTextColor="#fff"
         />
 </androidx.drawerlayout.widget.DrawerLayout>

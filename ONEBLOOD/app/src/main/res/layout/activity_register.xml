@@ -25,6 +25,7 @@
         android:id="@+id/name"
         android:textColor="#000000"
         android:textStyle="bold"
+        android:inputType="text"
         />
 
     <EditText
@@ -36,6 +37,7 @@
         android:id="@+id/username"
         android:textColor="#000000"
         android:textStyle="bold"
+        android:inputType="text"
         />
 
 
@@ -84,6 +86,7 @@
         android:id="@+id/location"
         android:textColor="#000000"
         android:textStyle="bold"
+        android:inputType="text"
         />
 
     <EditText
@@ -93,6 +96,7 @@
         android:hint="Blood Group"
         android:textColorHint="@color/c3"
         android:id="@+id/bloodGroup"
+        android:inputType="textCapWords"
         android:textColor="#000000"
         android:textStyle="bold"
         />
@@ -103,11 +107,8 @@
         app:cardBackgroundColor="@color/colorAccent"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="109dp"
+
+        android:layout_marginStart="89dp"
         android:layout_marginLeft="59dp"
         android:layout_marginBottom="100dp" >
 

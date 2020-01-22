@@ -7,16 +7,18 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class CustomAdapter extends BaseAdapter {
 
-    String[] countrynames;
-    String[] blood;
-    String[] mobile;
+    ArrayList<String> countrynames;
+    ArrayList<String> blood;
+    ArrayList<String> mobile;
     Context context;
 
     private LayoutInflater inflater;
 
-    CustomAdapter(Context context,String[] countrynames,String[] mobile,String[] blood){
+    CustomAdapter(Context context, ArrayList<String> countrynames, ArrayList<String> mobile, ArrayList<String> blood){
         this.context = context;
         this.countrynames = countrynames;
         this.mobile = mobile;
@@ -25,7 +27,7 @@ public class CustomAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return countrynames.length;
+        return countrynames.size();
     }
 
     @Override
@@ -50,9 +52,9 @@ public class CustomAdapter extends BaseAdapter {
         TextView textView1 = (TextView) convertView.findViewById(R.id.countryNameID);
         TextView textView2 = (TextView) convertView.findViewById(R.id.bloodID);
         TextView textView3 = (TextView) convertView.findViewById(R.id.mobileID);
-        textView1.setText(countrynames[position]);
-        textView2.setText(blood[position]);
-        textView3.setText(mobile[position]);
+        textView1.setText(countrynames.get(position));
+        textView2.setText(blood.get(position));
+        textView3.setText(mobile.get(position));
 
         return convertView;
     }

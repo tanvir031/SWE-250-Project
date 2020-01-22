@@ -19,13 +19,15 @@
         app:civ_border_color="@color/c1" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ONEBLOOD"
-        android:textColor="#fff"
+        android:textColor="#F8E112"
         android:textStyle="bold"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/bangers"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="30dp"
         />
 
 </LinearLayout>
